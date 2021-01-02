@@ -1,10 +1,16 @@
-FROM node:15.5-slim
+FROM node:15.5-buster
 
-WORKDIR /app
+RUN mkdir -p /home/app && chown -R node:node /home/app
 
-COPY . /app
+WORKDIR /home/app
 
-RUN ["npm", "install"]
+COPY --chown=node:node package*.json ./
+
+USER node
+
+RUN npm install
+
+COPY --chown=node:node . .
 
 CMD [ "npm", "run", "serve" ]
 
