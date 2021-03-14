@@ -1,6 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome To Wonderful Website"/>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <HelloWorld msg="Welcome To My Awesome site"/>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -16,7 +22,6 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

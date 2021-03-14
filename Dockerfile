@@ -2,13 +2,17 @@ FROM node:15.5-buster
 
 RUN mkdir -p /home/app
 
+RUN chown -R node /home/app
+
 WORKDIR /home/app
 
-COPY package.json .
+USER node
+
+COPY --chown=node package.json ./
 
 RUN npm install
 
-COPY . .
+COPY --chown=node . .
 
 CMD [ "npm", "run", "serve" ]
 

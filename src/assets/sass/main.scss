@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "./variables";
+
+@import 'node_modules/bootstrap/scss/bootstrap-grid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+
+body {
+    font-family: 'Noto Sans', Avenir, Helvetica, Arial, sans-serif;
+    font-size: $base-font-size;
+}
